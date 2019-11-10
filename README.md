@@ -1,0 +1,2 @@
+
+![pikkus](kasv.svg)
