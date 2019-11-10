@@ -13,7 +13,7 @@ pikkused %>%
 pikkused <- pikkused %>% 
   mutate(vanus = case_when(
     laps == "KM" ~ interval(dmy("27-08-2002"), kuupäev) / years(1),
-    laps == "A" ~ interval(dmy("13-04-2013"), kuupäev)  / dyears(1)
+    laps == "A" ~ interval(dmy("13-04-2013"), kuupäev)  / years(1)
   ))
 
 pikkused %>% 
