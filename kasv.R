@@ -19,5 +19,6 @@ pikkused <- pikkused %>%
 pikkused %>% 
   ggplot() +
   geom_line(aes(vanus, pikkus / 1000, color = laps)) +
-  labs(y = "Pikkus, m", x = "Vanus, aastat")
+  labs(y = "Pikkus, m", x = "Vanus, aastat") +
+  theme(legend.title = element_blank())
 
